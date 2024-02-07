@@ -1,42 +1,103 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+    max-width: 1280px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+body {
+    background: url("../public/background.jpg");
+    background-size: cover;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #4c3087;
+    min-height: 50px;
+    padding: 0;
+    margin: 0;
 }
 
 .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+    color: white;
+    margin-left: 30px;
+    font-size: 52px;
+    text-decoration: none;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.link-nav {
+    text-decoration: none;
+    color: white;
+    margin-right: 58px;
+    font-size: 22px;
+}
+.active {
+    color: deepskyblue;
+}
+.link-nav:hover {
+    border-bottom: 1px solid deepskyblue;
+    color: deepskyblue;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.form-group {
+    text-align: left;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
+label {
+    width: 100%;
+}
+
+.form-control {
+    width: 100%;
+    height: 30px;
+}
+.wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
 .card {
-  padding: 2em;
+    width: 45%;
+    max-height: 240px;
+    border: 1px solid #4c3087;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.card:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
 }
 
-.read-the-docs {
-  color: #888;
+.card:active {
+    border-color: rebeccapurple;
+    box-shadow: 0 0 10px rgba(102, 51, 153, 1);
+}
+
+.total-card {
+    border: 1px solid #4c3087;
+    border-radius: 10px;
+    width: 45%;
+    margin: 20px auto 0;
+}
+.img-catalog {
+    display: block;
+    width: 180px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.card-body {
+    text-align: center;
+    margin: 0 auto;
+}
+
+h3 span {
+    font-weight: normal;
 }
